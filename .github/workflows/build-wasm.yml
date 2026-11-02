@@ -17,5 +17,10 @@ jobs:
       - name: Build wasm
         run: |
           cd icu4c/source
-          emconfigure ./configure --enable-static --disable-shared  --disable-tools --disable-tests --disable-samples --disable-extras --with-data-packaging=static
+          
+          #works
+          #emconfigure ./configure --enable-static --disable-shared  --disable-tools --disable-tests --disable-samples --disable-extras --with-data-packaging=static
+          #emmake make
+          
+          emconfigure ./configure --enable-static --disable-shared  --disable-tools --disable-tests --disable-samples --disable-extras
           emmake make
