@@ -22,5 +22,5 @@ jobs:
           #emconfigure ./configure --enable-static --disable-shared  --disable-tools --disable-tests --disable-samples --disable-extras --with-data-packaging=static
           #emmake make
           
-          emconfigure ./configure --enable-static --disable-shared  --disable-tools --disable-tests --disable-samples --disable-extras
+          emconfigure ./configure --enable-static --disable-shared  --disable-tests --disable-samples --disable-extras --with-data-packaging=static
           emmake make
