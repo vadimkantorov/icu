@@ -22,5 +22,5 @@ jobs:
           #emconfigure ./configure --enable-static --disable-shared  --disable-tools --disable-tests --disable-samples --disable-extras --with-data-packaging=static
           #emmake make
           
-          emconfigure ./configure --without-assembly --enable-static --disable-shared  --disable-tests --disable-samples --disable-extras --with-data-packaging=static CXXFLAGS="-sEXECUTABLE -sNODERAWFS -sSTACK_SIZE=16777216 -sINITIAL_MEMORY=134217728"
-          emmake make
+          emconfigure ./configure --enable-static --disable-shared  --disable-tests --disable-samples --disable-extras --with-data-packaging=static CXXFLAGS="-sEXECUTABLE -sNODERAWFS -sSTACK_SIZE=16777216 -sINITIAL_MEMORY=134217728"
+          emmake make PKGDATA_OPTS="--without-assembly -O $PWD/data/icupkg.inc"
